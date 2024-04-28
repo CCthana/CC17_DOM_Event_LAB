@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Event-Lab2</title>
+</head>
+<body>
+   <form action="">
+      <label> E-mail </label>
+      <input type="text" placeholder="Enter your e-mail" />
+      <button>Submit</button>
+   </form>
+
+
+   <script>
+      const input = document.querySelector('button')
+
+      const form = document.querySelector('form')
+
+      form.addEventListener('submit', e => {
+         e.preventDefault()})
+
+
+      function clicked () {
+         alert('Form is submitted');
+      }
+
+      input.addEventListener('click' , clicked);
+
+      setTimeout(() => input.removeEventListener('click' , clicked), 5000);
+
+   </script>
+</body>
+</html>

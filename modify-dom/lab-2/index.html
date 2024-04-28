@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Modify-dom-Lab2</title>
+</head>
+<body>
+   <ul id="root">
+      
+   </ul>
+   <script>
+      
+      const root = document.getElementById('root')
+      
+
+      do {
+      message = prompt("Type anything") 
+      const newli = document.createElement('li')
+      newli.innerHTML = message
+      if (message === null) break
+      root.append(newli);
+      }  while (true) 
+
+   </script>
+</body>
+</html>
